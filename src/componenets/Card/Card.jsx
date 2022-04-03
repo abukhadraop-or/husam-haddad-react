@@ -12,12 +12,7 @@ import {
   ReleasedDate,
   OverView,
 } from 'componenets/Card/card.styles';
-/**
- * 
- *
- * 
- * @return {JSX.element}
- */
+
 function Card() {
   let url = `https://api.themoviedb.org/3/movie/popular?api_key=3024cf700c94345aa84ec47dbf98f3a4&language=en-US&page=1`;
   const [responseData, setResponseData] = useState([]);
