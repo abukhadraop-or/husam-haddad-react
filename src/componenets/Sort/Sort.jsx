@@ -1,13 +1,13 @@
-import React, { useContext, useState } from 'react';
-import UrlContext from 'componenets/store/url-context';
-import Button from 'componenets/UI/Button/Button';
-import Select from 'componenets/UI/Select/Select';
+import React, { useContext, useState } from "react";
+import UrlContext from "componenets/store/url-context";
+import Button from "componenets/UI/Button/Button";
+import Select from "componenets/UI/Select/Select";
 import {
   SearchList,
   SortDiv,
   Arrow,
   SearchListTitle,
-} from 'componenets/Sort/sort.styles';
+} from "componenets/Sort/sort.styles";
 /**
  * Render sort section element.
  *
@@ -15,7 +15,7 @@ import {
  */
 function Sort() {
   const [isClicked, setIsClicked] = useState(false);
-  const [sortValue, setSortValue] = useState('popularity.desc');
+  const [sortValue, setSortValue] = useState("popularity.desc");
   const [isDisabled, setIsDisabled] = useState(true);
 
   const url = `https://api.themoviedb.org/3/discover/movie?api_key=3024cf700c94345aa84ec47dbf98f3a4&language=en-US&sort_by=${sortValue}&include_adult=false&include_video=false&page=1`;
@@ -62,4 +62,4 @@ function Sort() {
   );
 }
 
-export default Sort;
+export default Sort;  

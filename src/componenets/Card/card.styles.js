@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CardContainer = styled.div`
   flex-direction: row;
@@ -8,6 +8,7 @@ export const CardContainer = styled.div`
   @media (min-width: 48rem) {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 75%;
   }
 `;
 
@@ -64,6 +65,12 @@ export const Title = styled.h2`
   font-size: 0.9rem;
   margin: 0.625rem;
   white-space: normal;
+
+  &:hover {
+    color: #00b4e4;
+    cursor: pointer;
+  }
+
   @media (min-width: 48rem) {
     margin-left: 0.3125rem;
   }

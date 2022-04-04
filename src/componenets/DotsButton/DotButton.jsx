@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import { Dots } from 'componenets/DotsButton/dotbutton-styles';
 /**
  * Render Dot Button element.
- *
+ * 
+ * @param {func} props.onClick handle click function.
+ *  
  * @return {JSX.element}
  */
 function DotButton({ onClick }) {

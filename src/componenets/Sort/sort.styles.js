@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { ReactComponent as arrow } from 'assets/arrow.svg';
+import styled from "styled-components";
+import { ReactComponent as arrow } from "assets/arrow.svg";
 
 export const SortDiv = styled.div`
   ${(probs) => probs.onClick}
@@ -12,11 +12,12 @@ export const SortDiv = styled.div`
     flex-direction: column;
     margin-top: -3.125rem;
     padding-top: 1rem;
+    flex-basis: 22%;
   }
 `;
 
 export const SearchList = styled.div`
-  border-radius: ${(props) => (props.isClicked ? '.5rem .5rem 0 0 ' : '.5rem')};
+  border-radius: ${(props) => (props.isClicked ? ".5rem .5rem 0 0 " : ".5rem")};
   border: 0.0625rem solid #e3e3e3;
   box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 10%);
   display: flex;
@@ -32,7 +33,7 @@ export const SearchList = styled.div`
 
 export const SearchListTitle = styled.h2`
   color: #000;
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 550;
   margin: auto 0.9375rem;
@@ -41,6 +42,6 @@ export const SearchListTitle = styled.h2`
 export const Arrow = styled(arrow)`
   flex-direction: row;
   margin: 0.9375rem;
-  transform: rotate(${(props) => (props.isClicked ? '90deg' : 0)});
+  transform: rotate(${(props) => (props.isClicked ? "90deg" : 0)});
   width: 1rem;
 `;
