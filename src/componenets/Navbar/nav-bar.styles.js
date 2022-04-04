@@ -49,7 +49,7 @@ export const HeaderImage = styled.div`
   display: flex;
   height: 100%;
   margin-left: 2.5rem;
-  width: 154px;
+  width: 9.625rem;
 `;
 
 export const Add = styled(add)`
@@ -58,16 +58,16 @@ export const Add = styled(add)`
 
 export const EnButton = styled.button`
   background-color: transparent;
-  border-radius: 3px;
+  border-radius: .1875rem;
   border: 1px solid white;
   color: #fff;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 0.75em;
   font-weight: 400;
-  height: 26px;
+  height: 1.625rem;
   margin: auto;
   padding: 0;
-  width: 28px;
+  width: 1.75rem;
   &:hover {
     background-color: #fff;
     color: #022541;
@@ -87,8 +87,8 @@ export const Links = styled.a`
 export const BurgerButton = styled(burger)`
   display: flex;
   fill: #fff;
-  margin: 15px;
-  width: 20px;
+  margin: .9375rem;
+  width: 1.25rem;
 
   @media (min-width: 768px) {
     display: none;
@@ -129,7 +129,7 @@ export const HeadIcon = styled(head)`
 `;
 
 export const HiddenSidebar = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     background-color: #203853;
     height: 100%;
     margin-left: ${(props) => (props.isClicked ? 0 : '-100%')};

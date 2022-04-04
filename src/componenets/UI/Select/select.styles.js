@@ -7,31 +7,6 @@ const HiddenDiv = styled.div`
   flex-direction: column;
   height: 5.9375rem;
   width: 100%;
-  /* & option {
-    background-color: #fff;
-    margin: 0;
-    width: 100%;
-    @media (max-width: 48rem) {
-      background-color: #fff; 
-      width: 100%;
-    }
-  } */
-
-  /* & select {
-    background-color: #c7cdd5;
-    border-color: #e4e7eb;
-    border-radius: 0.3125rem;
-    margin: auto;
-    padding: 0.375rem 1.75rem;
-
-    @media (max-width: 48rem) {
-      width: 90%;
-    } */
-  /* } */
-  /* & form {
-    display: flex;
-  } */
-
   @media (min-width: 48rem) {
     height: 5.9375rem;
   }
@@ -49,12 +24,12 @@ export const SelectParagraph = styled.h3`
 `;
 
 export const SelectItem = styled.select`
-  width: 90%;
-  margin: auto;
-  padding: 0.375rem 1.75rem;
   background-color: #c7cdd5;
   border-color: #e4e7eb;
   border-radius: 0.3125rem;
+  margin: auto;
+  padding: 0.375rem 1.75rem;
+  width: 90%;
 `;
 export const Option = styled.option`
   background-color: #fff;
