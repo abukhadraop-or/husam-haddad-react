@@ -1,7 +1,11 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { Menu, MenuDiv } from 'componenets/HiddenMenu/hidden-menu.styles';
-
+/**
+ * Render Hidden Side Menu element.
+ *
+ * @return {JSX.element}
+ */
 function HiddenMenu({ isClicked }) {
   return (
     <MenuDiv isClicked={isClicked}>
