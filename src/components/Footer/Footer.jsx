@@ -7,7 +7,7 @@ import {
   FooterPargraph,
   FooterTitle,
   FooterLogoText,
-} from 'componenets/Footer/footer.styles';
+} from 'components/Footer/footer.styles';
 import logo from 'assets/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg';
 /**
  * Render Footer element.

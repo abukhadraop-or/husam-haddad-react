@@ -15,9 +15,9 @@ import {
   HeadIcon,
   HiddenSidebar,
   LeftContainerList,
-} from 'componenets/Navbar/nav-bar.styles';
+} from 'components/Navbar/nav-bar.styles';
 import logo from 'assets/image1.svg';
-import BurgerList from 'componenets/UI/BurgerList/BurgerList';
+import BurgerList from 'components/UI/BurgerList/BurgerList';
 /**
  * Render Navbar element.
  *

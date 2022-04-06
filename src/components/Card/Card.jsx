@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
-import DotButton from 'componenets/DotsButton/DotButton';
-import HiddenMenu from 'componenets/HiddenMenu/HiddenMenu';
-import UrlContext from 'componenets/store/url-context';
+import React, { useContext, useEffect, useState } from "react";
+import DotButton from "components/DotsButton/DotButton";
+import HiddenMenu from "components/HiddenMenu/HiddenMenu";
+import UrlContext from "components/store/url-context";
 
 import {
   CardDiv,
@@ -11,8 +11,10 @@ import {
   Title,
   ReleasedDate,
   OverView,
-} from 'componenets/Card/card.styles';
-import getRequest from 'componenets/service/http';
+} from "components/Card/card.styles";
+import getRequest from "components/service/http";
+import Circle from "components/UI/Circle/Circle";
+
 /**
  * Render Card element.
  *
@@ -30,8 +32,22 @@ function Card() {
   const clickFun = (id) => {
     setHideMenu({ isShown: true, id });
   };
+/**
+ * Handle calulcating the progress. 
+ * 
+ * @param vote
+ *  
+ * @return number
+ */
+  const progressHandler = (vote) => {
+    console.log(vote);
+    vote /= 10;
+    console.log(vote);
+    const percentage = 116 - vote * 116;
+    return Math.ceil(percentage);
+  };
 
-  if (sortedUrl.url !== '') {
+  if (sortedUrl.url !== "") {
     url = sortedUrl.url;
   }
 
@@ -64,6 +80,10 @@ function Card() {
               onClick={() => {
                 clickFun(item.id);
               }}
+            />
+            <Circle
+              rate={progressHandler(item.vote_average)}
+              fill={item.vote_average * 10}
             />
             <CardInfo>
               <Title>{item.original_title}</Title>

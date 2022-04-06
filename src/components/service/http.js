@@ -4,7 +4,7 @@
  * @param {string} url            Request URl.
  * @param {Object} [headers=null] Object contains request headers.
  *
- * @return {Promise<Object>} Promise fulfilled with response data.
+ * @return {Promise<Object>}      Promise fulfilled with response data.
  */
 const getRequest = (url) => {
   const response = fetch(url, {

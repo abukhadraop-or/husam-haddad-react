@@ -5,9 +5,12 @@ import HiddenDiv, {
   SelectItem,
   Option,
   Form,
-} from 'componenets/UI/Select/select.styles';
+} from 'components/UI/Select/select.styles';
 /**
  * Render Form element.
+ * 
+ * @param {Object}   props          The component props.
+ * @param {Function} props.onChange Function to get the selected value. 
  *
  * @return {JSX.element}
  */

@@ -1,15 +1,16 @@
 import React, { useContext, useState } from "react";
-import UrlContext from "componenets/store/url-context";
-import Button from "componenets/UI/Button/Button";
-import Select from "componenets/UI/Select/Select";
+import UrlContext from "components/store/url-context";
+import Button from "components/UI/Button/Button";
+import Select from "components/UI/Select/Select";
 import {
   SearchList,
   SortDiv,
   Arrow,
   SearchListTitle,
-} from "componenets/Sort/sort.styles";
+} from "components/Sort/sort.styles";
 /**
  * Render sort section element.
+
  *
  * @return {JSX.element}
  */
@@ -49,17 +50,15 @@ function Sort() {
 
   return (
     <SortDiv>
-      <h2>Popular Moives</h2>
+      <h2>Popular Movies</h2>
       <SearchList onClick={clickHandler} isClicked={isClicked}>
         <SearchListTitle>Sort</SearchListTitle>
         <Arrow isClicked={isClicked} />
       </SearchList>
       {isClicked && <Select onChange={changeHandler} />}
-      <Button Click={submitHandler} disabled={isDisabled}>
-        Search
-      </Button>
+      <Button Click={submitHandler} disabled={isDisabled} buttonText="Search" />
     </SortDiv>
   );
 }
 
-export default Sort;  
+export default Sort;

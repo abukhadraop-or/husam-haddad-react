@@ -4,7 +4,7 @@ import {
   BurgerListTitle,
   BurgerListLogin,
   BurgerListItems,
-} from 'componenets/UI/BurgerList/burger-list.styles';
+} from 'components/UI/BurgerList/burger-list.styles';
 /**
  * Render Burgerlist Menu element.
  *

@@ -1,5 +1,5 @@
 import React from 'react';
-import MainDiv from 'componenets/Main/main.styles';
+import MainDiv from 'components/Main/main.styles';
 /**
  * Render Main element.
  *

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HiddenDiv = styled.div`
   border-radius: 0 0 0.5rem 0.5rem;
@@ -15,7 +15,7 @@ export const SelectParagraph = styled.h3`
   align-items: center;
   border-radius: 0.3125rem;
   color: #afafaf;
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 1em;
   font-weight: 300;
   margin-bottom: 0.625rem;
