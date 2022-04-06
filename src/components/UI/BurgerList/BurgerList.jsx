@@ -5,11 +5,13 @@ import {
   BurgerListLogin,
   BurgerListItems,
 } from 'components/UI/BurgerList/burger-list.styles';
+
 /**
  * Render Burgerlist Menu element.
  *
  * @return {JSX.element}
  */
+
 function BurgerList() {
   return (
     <BurgerDiv>

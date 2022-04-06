@@ -8,12 +8,14 @@ import {
   Arrow,
   SearchListTitle,
 } from "components/Sort/sort.styles";
+
 /**
  * Render sort section element.
 
  *
  * @return {JSX.element}
  */
+
 function Sort() {
   const [isClicked, setIsClicked] = useState(false);
   const [sortValue, setSortValue] = useState("popularity.desc");
@@ -25,23 +27,29 @@ function Sort() {
   /**
    * Handle Click event.
    */
+
   const clickHandler = () => {
     setIsClicked(!isClicked);
   };
+
+
   /**
    * Handle value Change event.
    *
    * @param {React.SyntheticEvent} event Event data.
    */
+
   const changeHandler = (event) => {
     setSortValue(event.target.value);
     setIsDisabled(false);
   };
+
   /**
    * Handle submit event
    *
    * @param {React.SyntheticEvent} event Event data.
    */
+  
   const submitHandler = (event) => {
     event.preventDefault();
     sortCtx.sortUrl(url);

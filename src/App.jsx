@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import Card from "./components/Card/Card";
-import MainDiv from "./components/Main/main.styles";
-import Sort from "./components/Sort/Sort";
-import Footer from "./components/Footer/Footer";
+import "App.css";
+import Navbar from "components/Navbar/Navbar";
+import Card from "components/Card/Card";
+import MainDiv from "components/Main/main.styles";
+import Sort from "components/Sort/Sort";
+import Footer from "components/Footer/Footer";
 
 function App() {
   return (

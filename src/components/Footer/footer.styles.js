@@ -34,7 +34,7 @@ export const FooterTitle = styled.h2`
   text-transform: uppercase;
 `;
 
-export const FooterPargraph = styled.p`
+export const FooterParagraph = styled.p`
   font-size: 1em;
   margin: .125rem;
 `;

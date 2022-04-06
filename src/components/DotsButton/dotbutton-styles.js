@@ -4,8 +4,9 @@ import { ReactComponent as cardbutton } from 'assets/cardbutton.svg';
 export const ButtonDiv = styled.div`
   background-color: black;
   height: 1.875rem;
-  position: absolute;
+  position: absolute; 
   width: 1.875rem;
+  padding: 1.875rem 1.875rem;
 `;
 
 export const Dots = styled(cardbutton)`

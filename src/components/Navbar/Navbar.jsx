@@ -18,11 +18,13 @@ import {
 } from 'components/Navbar/nav-bar.styles';
 import logo from 'assets/image1.svg';
 import BurgerList from 'components/UI/BurgerList/BurgerList';
+
 /**
  * Render Navbar element.
  *
  * @return {JSX.element}
  */
+
 function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
 
@@ -36,7 +38,7 @@ function Navbar() {
   return (
     <StyledNavbar>
       <StyledContainer>
-        <HeaderImage image={logo}>
+        <HeaderImage >
           <img src={logo} alt="" />
         </HeaderImage>
         <LeftContainerList>

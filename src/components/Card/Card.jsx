@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import DotButton from "components/DotsButton/DotButton";
 import HiddenMenu from "components/HiddenMenu/HiddenMenu";
 import UrlContext from "components/store/url-context";
-
 import {
   CardDiv,
   CardImage,
@@ -20,29 +19,28 @@ import Circle from "components/UI/Circle/Circle";
  *
  * @return {JSX.element}
  */
+
 function Card() {
   let url = `https://api.themoviedb.org/3/movie/popular?api_key=3024cf700c94345aa84ec47dbf98f3a4&language=en-US&page=1`;
   const [responseData, setResponseData] = useState([]);
-  const [hideMenu, setHideMenu] = useState({ isShown: false, id: null });
+  const [hideMenu, setHideMenu] = useState({ id: null, isShown: false });
   const sortedUrl = useContext(UrlContext);
 
   /**
    * Handle showing hidden div
    */
   const clickFun = (id) => {
-    setHideMenu({ isShown: true, id });
+    setHideMenu({ id, isShown: true });
   };
-/**
- * Handle calulcating the progress. 
- * 
- * @param vote
- *  
- * @return number
- */
+  /**
+   * Handle calculating the progress.
+   *
+   * @param {Number} vote vote rate.
+   *
+   * @return {Number}
+   */
   const progressHandler = (vote) => {
-    console.log(vote);
     vote /= 10;
-    console.log(vote);
     const percentage = 116 - vote * 116;
     return Math.ceil(percentage);
   };
@@ -52,7 +50,7 @@ function Card() {
   }
 
   const hideMenuHandler = () => {
-    setHideMenu({ isShown: false, id: null });
+    setHideMenu({ id: null, isShown: false });
   };
 
   useEffect(() => {

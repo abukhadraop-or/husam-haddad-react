@@ -26,7 +26,7 @@ export const SvgCircle = styled.svg`
 `;
 export const FirstCircle = styled.circle`
   fill: none;
-  stroke: #d3d3d3;
+  stroke: ${(props) => (props.fill >= 70 ? "#122D25" : "#413D0F")}; ;
 `;
 
 export const CircleGroup = styled.g``;
@@ -34,7 +34,7 @@ export const CircleGroup = styled.g``;
 export const SecondCircle = styled.circle`
   fill: none;
   stroke: ${(props) => (props.fill >= 70 ? "#4FD17B" : "#D0D230")};
-  stroke-width: 3;
+  stroke-width: 2;
   stroke-dasharray: 116;
   stroke-dashoffset: ${(props) => props.rate};
 `;

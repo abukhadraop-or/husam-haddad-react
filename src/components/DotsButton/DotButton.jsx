@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Dots } from 'components/DotsButton/dotbutton-styles';
+
 /**
  * Render Dot Button element.
  * 
@@ -9,6 +10,7 @@ import { Dots } from 'components/DotsButton/dotbutton-styles';
  *  
  * @return {JSX.element}
  */
+
 function DotButton({ onClick }) {
   return <Dots onClick={onClick} />;
 }

@@ -1,19 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import HiddenDiv, {
   SelectParagraph,
   SelectItem,
   Option,
   Form,
-} from 'components/UI/Select/select.styles';
+} from "components/UI/Select/select.styles";
+
 /**
  * Render Form element.
- * 
+ *
  * @param {Object}   props          The component props.
- * @param {Function} props.onChange Function to get the selected value. 
+ * @param {Function} props.onChange Function to get the selected value.
  *
  * @return {JSX.element}
  */
+
 function Select({ onChange }) {
   return (
     <HiddenDiv>

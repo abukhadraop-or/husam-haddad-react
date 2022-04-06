@@ -6,6 +6,7 @@ import {
   MenuDiv,
   SecondMenu,
 } from "components/HiddenMenu/hidden-menu.styles";
+
 /**
  * Render Hidden Side Menu element.
  *
@@ -16,6 +17,7 @@ import {
  *
  * @return {JSX.element}
  */
+
 function HiddenMenu({ isClicked, id, hide }) {
   return (
     <MenuDiv isClicked={isClicked} id={id}>

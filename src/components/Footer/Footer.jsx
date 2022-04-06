@@ -1,19 +1,21 @@
-import React from 'react';
+import React from "react";
 import {
   FooterDiv,
   FooterElement,
   FooterLogo,
   FooterImage,
-  FooterPargraph,
+  FooterParagraph,
   FooterTitle,
   FooterLogoText,
-} from 'components/Footer/footer.styles';
-import logo from 'assets/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg';
+} from "components/Footer/footer.styles";
+import logo from "assets/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg";
+
 /**
  * Render Footer element.
  *
  * @return {JSX.element}
  */
+
 function Footer() {
   return (
     <FooterDiv>
@@ -23,30 +25,30 @@ function Footer() {
       </FooterLogo>
       <FooterElement>
         <FooterTitle>The Basics</FooterTitle>
-        <FooterPargraph>About TMDB</FooterPargraph>
-        <FooterPargraph>Contact Us</FooterPargraph>
-        <FooterPargraph>Support Forums</FooterPargraph>
-        <FooterPargraph>API</FooterPargraph>
-        <FooterPargraph>System Status</FooterPargraph>
+        <FooterParagraph>About TMDB</FooterParagraph>
+        <FooterParagraph>Contact Us</FooterParagraph>
+        <FooterParagraph>Support Forums</FooterParagraph>
+        <FooterParagraph>API</FooterParagraph>
+        <FooterParagraph>System Status</FooterParagraph>
       </FooterElement>
       <FooterElement>
         <FooterTitle>Get Involved</FooterTitle>
-        <FooterPargraph>Contribution Bible</FooterPargraph>
-        <FooterPargraph>Add New Movie</FooterPargraph>
-        <FooterPargraph>Add New TV Show</FooterPargraph>
+        <FooterParagraph>Contribution Bible</FooterParagraph>
+        <FooterParagraph>Add New Movie</FooterParagraph>
+        <FooterParagraph>Add New TV Show</FooterParagraph>
       </FooterElement>
       <FooterElement>
         <FooterTitle>Community</FooterTitle>
-        <FooterPargraph>Guidelines</FooterPargraph>
-        <FooterPargraph>Disscussions</FooterPargraph>
-        <FooterPargraph>Leaderboard</FooterPargraph>
-        <FooterPargraph>Twitter</FooterPargraph>
+        <FooterParagraph>Guidelines</FooterParagraph>
+        <FooterParagraph>Disscussions</FooterParagraph>
+        <FooterParagraph>Leaderboard</FooterParagraph>
+        <FooterParagraph>Twitter</FooterParagraph>
       </FooterElement>
       <FooterElement>
         <FooterTitle>Legal</FooterTitle>
-        <FooterPargraph>Terms of Use</FooterPargraph>
-        <FooterPargraph>API Terms of Use</FooterPargraph>
-        <FooterPargraph>Privacy Policy</FooterPargraph>
+        <FooterParagraph>Terms of Use</FooterParagraph>
+        <FooterParagraph>API Terms of Use</FooterParagraph>
+        <FooterParagraph>Privacy Policy</FooterParagraph>
       </FooterElement>
     </FooterDiv>
   );

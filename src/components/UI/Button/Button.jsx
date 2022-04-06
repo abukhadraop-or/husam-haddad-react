@@ -12,6 +12,7 @@ import { ButtonDiv, ButtonText } from "components/UI/Button/button.styles";
  *
  * @return {JSX.element}
  */
+
 function Button({ Click, disabled, buttonText }) {
   return (
     <ButtonDiv onClick={Click} disabled={disabled}>

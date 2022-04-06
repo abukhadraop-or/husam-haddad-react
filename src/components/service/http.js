@@ -6,6 +6,7 @@
  *
  * @return {Promise<Object>}      Promise fulfilled with response data.
  */
+
 const getRequest = (url) => {
   const response = fetch(url, {
     dataType: 'json',
