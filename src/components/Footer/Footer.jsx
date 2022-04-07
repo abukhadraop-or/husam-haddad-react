@@ -1,56 +1,55 @@
 import React from "react";
 import {
-  FooterDiv,
-  FooterElement,
-  FooterLogo,
-  FooterImage,
+  Container,
+  Column,
+  Logo,
+  Image,
   FooterParagraph,
   FooterTitle,
-  FooterLogoText,
+  LogoText,
 } from "components/Footer/footer.styles";
 import logo from "assets/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg";
+
+const DataArray = [
+  {
+    title: "The Basics",
+    text: ["About TMDB","Contact Us ","Support Forums"," API","System Status",],
+  },
+  {
+    title: "Get Involved",
+    text: ["Contribution Bible", "Add New Movie", "Add New TV Show "],
+  },
+  {
+    title: "Community",
+    text: ["Guidelines", "Discussions ", "Leaderboard", "Twitter"],
+  },
+  {
+    title: "Legal",
+    text: ["Terms of Use", "API Terms of Use ", "Privacy Policy"],
+  },
+];
 
 /**
  * Render Footer element.
  *
  * @return {JSX.element}
  */
-
 function Footer() {
   return (
-    <FooterDiv>
-      <FooterLogo>
-        <FooterImage Img={logo} />
-        <FooterLogoText>JOIN THE COMMUNITY </FooterLogoText>
-      </FooterLogo>
-      <FooterElement>
-        <FooterTitle>The Basics</FooterTitle>
-        <FooterParagraph>About TMDB</FooterParagraph>
-        <FooterParagraph>Contact Us</FooterParagraph>
-        <FooterParagraph>Support Forums</FooterParagraph>
-        <FooterParagraph>API</FooterParagraph>
-        <FooterParagraph>System Status</FooterParagraph>
-      </FooterElement>
-      <FooterElement>
-        <FooterTitle>Get Involved</FooterTitle>
-        <FooterParagraph>Contribution Bible</FooterParagraph>
-        <FooterParagraph>Add New Movie</FooterParagraph>
-        <FooterParagraph>Add New TV Show</FooterParagraph>
-      </FooterElement>
-      <FooterElement>
-        <FooterTitle>Community</FooterTitle>
-        <FooterParagraph>Guidelines</FooterParagraph>
-        <FooterParagraph>Disscussions</FooterParagraph>
-        <FooterParagraph>Leaderboard</FooterParagraph>
-        <FooterParagraph>Twitter</FooterParagraph>
-      </FooterElement>
-      <FooterElement>
-        <FooterTitle>Legal</FooterTitle>
-        <FooterParagraph>Terms of Use</FooterParagraph>
-        <FooterParagraph>API Terms of Use</FooterParagraph>
-        <FooterParagraph>Privacy Policy</FooterParagraph>
-      </FooterElement>
-    </FooterDiv>
+    <Container>
+      <Logo>
+        <Image Img={logo} />
+        <LogoText>JOIN THE COMMUNITY </LogoText>
+      </Logo>
+      {DataArray.map((items) => (
+        <Column>
+          <FooterTitle>{items.title}</FooterTitle>
+          {items.text.map((item) => (
+            <FooterParagraph>{item} </FooterParagraph>
+          ))}
+        </Column>
+      ))}
+    </Container>
   );
 }
 export default Footer;

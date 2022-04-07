@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as arrow } from "assets/arrow.svg";
 
-export const SortDiv = styled.div`
+export const Container = styled.div`
   ${(probs) => probs.onClick}
   display: flex;
   flex-direction: column;
@@ -26,6 +26,7 @@ export const SearchList = styled.div`
   justify-content: space-between;
   margin-top: 0.8125rem;
   text-align: start;
+
   @media (min-width: 48rem) {
     width: 100%;
   }

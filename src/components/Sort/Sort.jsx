@@ -4,41 +4,38 @@ import Button from "components/UI/Button/Button";
 import Select from "components/UI/Select/Select";
 import {
   SearchList,
-  SortDiv,
+  Container,
   Arrow,
   SearchListTitle,
 } from "components/Sort/sort.styles";
 
 /**
  * Render sort section element.
-
  *
  * @return {JSX.element}
  */
-
 function Sort() {
   const [isClicked, setIsClicked] = useState(false);
   const [sortValue, setSortValue] = useState("popularity.desc");
   const [isDisabled, setIsDisabled] = useState(true);
 
-  const url = `https://api.themoviedb.org/3/discover/movie?api_key=3024cf700c94345aa84ec47dbf98f3a4&language=en-US&sort_by=${sortValue}&include_adult=false&include_video=false&page=1`;
   const sortCtx = useContext(UrlContext);
+  if (sortCtx.url === "") {
+    sortCtx.sortUrl("popularity.desc");
+  }
 
   /**
    * Handle Click event.
    */
-
   const clickHandler = () => {
     setIsClicked(!isClicked);
   };
-
 
   /**
    * Handle value Change event.
    *
    * @param {React.SyntheticEvent} event Event data.
    */
-
   const changeHandler = (event) => {
     setSortValue(event.target.value);
     setIsDisabled(false);
@@ -49,15 +46,14 @@ function Sort() {
    *
    * @param {React.SyntheticEvent} event Event data.
    */
-  
   const submitHandler = (event) => {
     event.preventDefault();
-    sortCtx.sortUrl(url);
+    sortCtx.sortUrl(sortValue);
     setIsDisabled(true);
   };
 
   return (
-    <SortDiv>
+    <Container>
       <h2>Popular Movies</h2>
       <SearchList onClick={clickHandler} isClicked={isClicked}>
         <SearchListTitle>Sort</SearchListTitle>
@@ -65,7 +61,7 @@ function Sort() {
       </SearchList>
       {isClicked && <Select onChange={changeHandler} />}
       <Button Click={submitHandler} disabled={isDisabled} buttonText="Search" />
-    </SortDiv>
+    </Container>
   );
 }
 

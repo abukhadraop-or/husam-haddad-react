@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import HiddenDiv, {
-  SelectParagraph,
+import {
+  HiddenDiv,
+  SelectText,
   SelectItem,
   Option,
   Form,
@@ -15,13 +16,16 @@ import HiddenDiv, {
  *
  * @return {JSX.element}
  */
-
 function Select({ onChange }) {
   return (
     <HiddenDiv>
-      <SelectParagraph>Sort result By</SelectParagraph>
+      <SelectText>Sort result By</SelectText>
       <Form>
-        <SelectItem onChange={onChange} name="sort">
+        <SelectItem
+          onChange={onChange}
+          name="sort"
+          defaultValue="popularity.desc"
+        >
           <Option value="popularity.desc">Popularity Descending</Option>
           <Option value="popularity.asc">Popularity Ascending</Option>
           <Option value="vote_average.desc">Rating Descending</Option>

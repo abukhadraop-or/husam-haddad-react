@@ -1,36 +1,40 @@
-import React from 'react';
+import React from "react";
 import {
-  BurgerDiv,
-  BurgerListTitle,
-  BurgerListLogin,
-  BurgerListItems,
-} from 'components/UI/BurgerList/burger-list.styles';
+  Container,
+  ListTitle,
+  Login,
+  ListItem,
+} from "components/UI/BurgerList/burger-list.styles";
+
+const DataArray = [
+  "Contribution Bible",
+  "Apps",
+  "Discussions",
+  "Leaderboard",
+  "Contribute",
+  "API",
+  "Support",
+  "About",
+];
 
 /**
  * Render Burgerlist Menu element.
  *
  * @return {JSX.element}
  */
-
 function BurgerList() {
   return (
-    <BurgerDiv>
-      <BurgerListTitle>Movies </BurgerListTitle>
-      <BurgerListTitle> TV Shows</BurgerListTitle>
-      <BurgerListTitle>People </BurgerListTitle>
-
+    <Container>
+      <ListTitle>Movies </ListTitle>
+      <ListTitle> TV Shows</ListTitle>
+      <ListTitle>People </ListTitle>
       <section>
-        <BurgerListItems>Contribution Bible</BurgerListItems>
-        <BurgerListItems>Apps</BurgerListItems>
-        <BurgerListItems>Discussions</BurgerListItems>
-        <BurgerListItems>Leaderbord</BurgerListItems>
-        <BurgerListItems>Contribute</BurgerListItems>
-        <BurgerListItems>API</BurgerListItems>
-        <BurgerListItems>Support</BurgerListItems>
-        <BurgerListItems>About</BurgerListItems>
-        <BurgerListLogin>Login</BurgerListLogin>
+        {DataArray.map((item) => (
+          <ListItem> {item} </ListItem>
+        ))}
+        <Login>Login</Login>
       </section>
-    </BurgerDiv>
+    </Container>
   );
 }
 

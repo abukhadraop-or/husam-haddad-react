@@ -1,9 +1,9 @@
 import React from "react";
 import propTypes from "prop-types";
 import {
-  HiddenClickedDiv,
+  ClickedDiv,
   Menu,
-  MenuDiv,
+  Container,
   SecondMenu,
 } from "components/HiddenMenu/hidden-menu.styles";
 
@@ -17,11 +17,10 @@ import {
  *
  * @return {JSX.element}
  */
-
 function HiddenMenu({ isClicked, id, hide }) {
   return (
-    <MenuDiv isClicked={isClicked} id={id}>
-      <HiddenClickedDiv onClick={hide} />
+    <Container isClicked={isClicked} id={id}>
+      <ClickedDiv onClick={hide} />
       <Menu>
         <p>hello</p>
         <p>hello</p>
@@ -30,9 +29,10 @@ function HiddenMenu({ isClicked, id, hide }) {
         <p>hello</p>
         <p>hello</p>
       </SecondMenu>
-    </MenuDiv>
+    </Container>
   );
 }
+
 HiddenMenu.propTypes = {
   hide: propTypes.func.isRequired,
   id: propTypes.number.isRequired,

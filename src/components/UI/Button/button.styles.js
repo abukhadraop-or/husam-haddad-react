@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonDiv = styled.button`
+export const Container = styled.button`
   align-content: center;
   align-items: center;
   background-color: ${(props) => (props.disabled ? "#ECECEC" : "#00B4E4")};
@@ -13,6 +13,6 @@ export const ButtonDiv = styled.button`
   margin: 0.9375rem 0 0 0;
 `;
 
-export const ButtonText = styled.h2`
+export const Text = styled.h2`
   font-size: 1.3em;
 `;

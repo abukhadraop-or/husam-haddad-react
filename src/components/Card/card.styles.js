@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+export const MainContainer = styled.div`
   flex-direction: row;
   width: auto;
   padding: 1rem;
   justify-content: space-between;
+
   @media (min-width: 48rem) {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +13,7 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const CardDiv = styled.div`
+export const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -22,6 +23,7 @@ export const CardDiv = styled.div`
   border: 0.0625rem solid #e3e3e3;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.5rem #0000001a;
+
   @media (min-width: 48rem) {
     flex-direction: column;
     height: 21rem;
@@ -30,7 +32,7 @@ export const CardDiv = styled.div`
   }
 `;
 
-export const CardImage = styled.img`
+export const Image = styled.img`
   background-image: url(${(props) => props.img});
   background-position: center;
   background-repeat: no-repeat;
@@ -41,6 +43,7 @@ export const CardImage = styled.img`
   height: 8.8125rem;
   min-height: 8.8125rem;
   width: 5.875rem;
+
   @media (min-width: 48rem) {
     border-radius: 0.5rem 0.5rem 0 0;
     height: 14.75rem;
@@ -50,11 +53,12 @@ export const CardImage = styled.img`
   }
 `;
 
-export const CardInfo = styled.div`
+export const Info = styled.div`
   flex-direction: row;
   width: 100%;
   word-wrap: normal;
   overflow-wrap: break-word;
+
   @media (min-width: 48rem) {
     flex-direction: column;
     flex-wrap: wrap;
@@ -81,6 +85,7 @@ export const ReleasedDate = styled.p`
   font-size: 1em;
   margin-left: 0.3125rem;
   padding: 0;
+
   @media (min-width: 48rem) {
     margin: 0.625rem;
   }
@@ -97,6 +102,7 @@ export const OverView = styled.p`
   overflow: hidden;
   padding: 0;
   text-overflow: ellipsis;
+
   @media (min-width: 48rem) {
     display: none;
   }

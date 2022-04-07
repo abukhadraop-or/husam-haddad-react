@@ -1,6 +1,6 @@
 import React from "react";
 import propTypes from "prop-types";
-import { ButtonDiv, ButtonText } from "components/UI/Button/button.styles";
+import { Container, Text } from "components/UI/Button/button.styles";
 
 /**
  * Render Button element.
@@ -12,12 +12,11 @@ import { ButtonDiv, ButtonText } from "components/UI/Button/button.styles";
  *
  * @return {JSX.element}
  */
-
 function Button({ Click, disabled, buttonText }) {
   return (
-    <ButtonDiv onClick={Click} disabled={disabled}>
-      <ButtonText>{buttonText}</ButtonText>
-    </ButtonDiv>
+    <Container onClick={Click} disabled={disabled}>
+      <Text>{buttonText}</Text>
+    </Container>
   );
 }
 

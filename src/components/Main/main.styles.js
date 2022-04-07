@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const MainDiv = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -12,4 +12,5 @@ const MainDiv = styled.div`
     padding: 1.875rem;
   }
 `;
-export default MainDiv;
+
+export default Container;

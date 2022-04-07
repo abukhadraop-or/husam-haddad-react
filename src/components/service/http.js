@@ -6,8 +6,7 @@
  *
  * @return {Promise<Object>}      Promise fulfilled with response data.
  */
-
-const getRequest = (url) => {
+const get = (url) => {
   const response = fetch(url, {
     dataType: 'json',
     headers: { 'Content-Type': 'application/json' },
@@ -18,4 +17,4 @@ const getRequest = (url) => {
   return response;
 };
 
-export default getRequest;
+export default get;

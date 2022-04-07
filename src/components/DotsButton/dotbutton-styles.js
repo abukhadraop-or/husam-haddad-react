@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as cardbutton } from 'assets/cardbutton.svg';
+import { ReactComponent as CardButton } from 'assets/cardbutton.svg';
 
 export const ButtonDiv = styled.div`
   background-color: black;
@@ -9,7 +9,7 @@ export const ButtonDiv = styled.div`
   padding: 1.875rem 1.875rem;
 `;
 
-export const Dots = styled(cardbutton)`
+export const Dots = styled(CardButton)`
   position: absolute;
   right: 0.3125rem;
   top: 0.5rem;
@@ -19,9 +19,11 @@ export const Dots = styled(cardbutton)`
     fill: white;
     opacity: 0.7;
   }
+
   & :hover {
     fill: #00b4e4;
   }
+
   @media (max-width: 48rem) {
     display: none;
   } 

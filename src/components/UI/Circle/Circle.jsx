@@ -1,7 +1,7 @@
 import React from "react";
 import propTypes from "prop-types";
 import {
-  CircleDiv,
+  Container,
   FirstCircle,
   SecondCircle,
   SvgCircle,
@@ -18,10 +18,9 @@ import {
  *
  * @return {JSX.element}
  */
-
 function Circle({ rate, fill }) {
   return (
-    <CircleDiv>
+    <Container>
       <SvgCircle>
         <CircleGroup>
           <FirstCircle r="18" cx="20" cy="20" fill={fill} />
@@ -29,7 +28,7 @@ function Circle({ rate, fill }) {
         </CircleGroup>
       </SvgCircle>
       <Rate>{fill}%</Rate>
-    </CircleDiv>
+    </Container>
   );
 }
 

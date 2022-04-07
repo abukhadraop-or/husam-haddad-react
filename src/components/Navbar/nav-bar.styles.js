@@ -4,7 +4,7 @@ import { ReactComponent as burger } from "assets/burger.svg";
 import { ReactComponent as head } from "assets/head.svg";
 import { ReactComponent as logo } from "assets/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg";
 
-export const StyledNavbar = styled.nav`
+export const MainContainer = styled.nav`
   background: #022541;
   display: flex;
   font-family: "Source Sans Pro", Arial, sans-serif;

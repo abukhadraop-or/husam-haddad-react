@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import {
   HeaderImage,
-  StyledNavbar,
+  MainContainer,
   StyledContainer,
   RightContainer,
   Add,
@@ -24,7 +24,6 @@ import BurgerList from 'components/UI/BurgerList/BurgerList';
  *
  * @return {JSX.element}
  */
-
 function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
 
@@ -36,7 +35,7 @@ function Navbar() {
   };
 
   return (
-    <StyledNavbar>
+    <MainContainer>
       <StyledContainer>
         <HeaderImage >
           <img src={logo} alt="" />
@@ -68,7 +67,8 @@ function Navbar() {
           <BurgerList />
         </HiddenSidebar>
       </MobileNav>
-    </StyledNavbar>
+    </MainContainer>
   );
 }
+
 export default Navbar;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MenuDiv = styled.div`
+export const Container = styled.div`
   background-color: #fff;
   display: ${(props) =>
     props.isClicked.isShown && props.id === props.isClicked.id
@@ -28,7 +28,7 @@ export const SecondMenu = styled.div`
   border-top: 0.0625rem solid #21252926;
 `;
 
-export const HiddenClickedDiv = styled.div`
+export const ClickedDiv = styled.div`
   position: fixed;
   top: 0;
   left: 0;

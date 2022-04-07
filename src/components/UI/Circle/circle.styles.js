@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const CircleDiv = styled.div`
+export const Container = styled.div`
   display: none;
+
   @media (min-width: 48rem) {
     display: flex;
     position: absolute;
@@ -17,6 +18,7 @@ export const CircleDiv = styled.div`
     z-index: 50;
   }
 `;
+
 export const SvgCircle = styled.svg`
   stroke-width: 2;
   width: 2.5rem;
@@ -24,6 +26,7 @@ export const SvgCircle = styled.svg`
   transform-origin: center;
   transform: rotate(270deg);
 `;
+
 export const FirstCircle = styled.circle`
   fill: none;
   stroke: ${(props) => (props.fill >= 70 ? "#122D25" : "#413D0F")}; ;
