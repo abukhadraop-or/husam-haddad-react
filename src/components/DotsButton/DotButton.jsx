@@ -11,7 +11,7 @@ import { Dots } from "components/DotsButton/dotbutton-styles";
  * @return {JSX.element}
  */
 function DotButton({ onClick }) {
-  return <Dots onClick={onClick} />;
+  return <Dots onClick={onClick} role="button" data-testid='button' />;
 }
 
 DotButton.propTypes = {

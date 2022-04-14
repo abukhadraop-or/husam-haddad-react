@@ -53,9 +53,13 @@ function Sort() {
   };
 
   return (
-    <Container>
+    <Container data-testid="sort">
       <h2>Popular Movies</h2>
-      <SearchList onClick={clickHandler} isClicked={isClicked}>
+      <SearchList
+        onClick={clickHandler}
+        isClicked={isClicked}
+        data-testid="arrowlist"
+      >
         <SearchListTitle>Sort</SearchListTitle>
         <Arrow isClicked={isClicked} />
       </SearchList>
